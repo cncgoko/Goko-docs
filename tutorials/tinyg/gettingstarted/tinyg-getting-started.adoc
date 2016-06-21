@@ -1,0 +1,53 @@
+= Goko - Getting started with TinyG
+Goko <contact@goko.fr>
+1.0, 2016-06-09, Goko
+:imagesdir: images/
+
+This tutorial explains the basics of using TinyG with Goko
+
+_Last modification: {docdate}_
+
+:toc:
+
+== Installation
+
+== Defining TinyG as target board
+
+At first start, the application will prompt the target board selection dialog. For this tutorial, make sure TinyG v0.97 is selected and validate.
+The application will starts with the configured components for TinyG.
+
+NOTE: If you already launched Goko with a different target board, you can change it using menu:Windows[Preferences > General]
+
+== Configuring serial connection
+
+TinyG uses a Serial connection to communicate. We need to configure Goko so the connection can be established.
+
+
+image::serial-toolbar.png[caption="Figure 1: ", title="The serial toolbar"]
+
+* Access the serial preferences page by clicking the image:gear.png[Settings] button in the serial toolbar, or by using the menu menu:Windows[ Preferences > Serial]
+
+* Configure the following settings :
+   ** Baudrate : *115,200*
+   ** Data bits : *8*
+   ** Parity : *None*
+   ** Stop bits: *1*
+   ** Flow control: *RTC/CTS*
+
+* Hit Apply to validate your settings.
+
+WARNING: the above settings are TinyG default settings. If you changed them in TinyG configuration before, make sure to adapt your settings.
+
+== Activate serial console
+
+* Make sure the serial console is activated, so you can monitor the incoming and outgoing data.
+
+Serial console displays a green dot image:activated.png[Activated] in the top right corner of its stack border when it's activated.
+
+== Connecting to TinyG
+
+* Make sure the TinyG board is correctly plugged and powered.
+
+* Select the TinyG Serial port in the combobox (name should be something like `usbserial-AE01DVWD` or `COM12`). If no serial port is listed, try to hit the image:reload.png[Reload Serial ports] button to refresh the list of serial ports.
+
+* Hit the image:plug-connect.png[Connect] button to establish connection.

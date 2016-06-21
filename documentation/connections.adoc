@@ -1,0 +1,39 @@
+:settingsIcon: `image::serial-toolbar.png[] Settings`
+
+== Connecting to your board
+
+=== Serial connection
+Current version _({gokoVersion})_ supports Serial connection as it is quite commonly available at the time of writing.
+
+The connection toolbar is located in the upper main toolbar and shows the following elements :
+
+image::serial-toolbar.png[serial-toolbar, align=center]
+
+. The currently selected serial port,
+. The refresh serial port list button,
+. The connect button,
+. The disconnect button,
+. The serial setting button, which provides quick access to the serial connection settings.
+
+Before connecting, make sure to configure the connection settings as required by your board parameters.
+
+==== Serial preferences
+
+Serial connections settings can be configured in the Serial preferences page.
+
+You can access it by clicking the image:gear.png[Settings] button in the toolbar, or by using the menu menu:Windows[ Preferences > Serial]
+
+.The serial settings preferences page
+image::serial-settings.png[The serial settings preferences page, align="center"]
+
+==== Serial console
+
+The serial console displays all data flowing through in and out the active serial connection. It can also be used to send direct command to the connected serial device.
+
+.The serial console part
+image::serial-console.png[The serial console, align="center"]
+
+.Sending data
+Type the data in the upper input field and simply hit Send or press Enter key. The data will be completed with the selected end line character and then transmitted to the connected serial device.
+
+WARNING: Manually sending data using the Serial Console during the execution of a gcode file is strongly discouraged as it may interfer with the execution process !
