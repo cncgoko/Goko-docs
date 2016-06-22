@@ -34,7 +34,7 @@ image::serial-toolbar.png[caption="Figure 1: ", title="The serial toolbar"]
    ** Data bits : *8*
    ** Parity : *None*
    ** Stop bits: *1*
-   ** Flow control: *RTC/CTS*
+   ** Flow control: *RTS/CTS*
 
 * Hit Apply to validate your settings.
 
@@ -53,3 +53,72 @@ Serial console displays a green dot image:activated.png[Activated] in the top ri
 * Select the TinyG Serial port in the combobox (name should be something like `usbserial-AE01DVWD` or `COM12`). If no serial port is listed, try to hit the image:reload.png[Reload Serial ports] button to refresh the list of serial ports.
 
 * Hit the image:plug-connect.png[Connect] button to establish connection.
+
+The connection status at the bottom left corner of the application will now display a established connection.
+
+image::serial-connected-status.png[caption="Figure 2: ", title="The serial connection status"]
+
+== TinyG configuration
+
+* Once connected, Goko will requests TinyG for configuration groups.
+
+If everything goes well, you should be able to see the communication in the console, as shown below :
+
+[source,json]
+.Requests sent by Goko
+----
+{"sr":""}
+{"qr":""}
+{"1":""}
+{"2":""}
+{"3":""}
+{"4":""}
+{"x":""}
+{"y":""}
+{"z":""}
+{"a":""}
+{"sys":""}
+{"G55":""}
+{"G56":""}
+{"G57":""}
+{"G58":""}
+{"G59":""}
+----
+
+[source,json]
+.Response from TinyG
+----
+{"r":{"sr":{"posx":0.000,"posy":0.000,"posz":0.000,"posa":0.000,"feed":0.00,"vel":0.00,"unit":1,"coor":1,"dist":0,"frmo":1,"stat":1}},"f":[1,0,10,1190]}
+{"r":{"qr":32},"f":[1,0,10,9617]}
+{"r":{"1":{"ma":0,"sa":0.900,"tr":32.0000,"mi":8,"po":1,"pm":1}},"f":[1,0,9,8694]}
+{"r":{"2":{"ma":1,"sa":0.900,"tr":32.0000,"mi":8,"po":1,"pm":1}},"f":[1,0,9,5984]}
+// content omitted for brevity
+{"r":{"g57":{"x":0.000,"y":0.000,"z":0.000,"a":0.000,"b":0.000,"c":0.000}},"f":[1,0,11,8386]}
+{"r":{"g58":{"x":0.000,"y":0.000,"z":0.000,"a":0.000,"b":0.000,"c":0.000}},"f":[1,0,11,2541]}
+{"r":{"g59":{"x":0.000,"y":0.000,"z":0.000,"a":0.000,"b":0.000,"c":0.000}},"f":[1,0,11,6695]}
+----
+
+
+* For correct communication between TinyG and Goko, make sure the following parameters are configured as below: +
+
+** ``{"ej":"1"}`` Enable JSON mode. *Goko only supports JSON communication.*
+** ``{"js":"1"}`` Sets JSON strict syntax
+** ``{"ex":"2"}`` Enable RTS/CTS as flow control in TinyG,
+** ``{"jv":"5"}`` JSON verbosity to Verbose
+** ``{"qv":"2"}`` Queue report verbosity to Triple
+
+== Conclusion
+
+Goko and TinyG are now communicating correctly. You're ready to run your first milling job.
+
+== Checklist for common connection problems
+
+.Connection problems
+|===
+|Problem | Investigate
+
+| Connection status displays a green connection icon, but no data is exchanged
+| Check that the Serial settings match on both Goko and TinyG _(especially the baudrate since it can be changed in TinyG configuration)_
+|===
+
+If you're issue is not listed in the table above, feel free to ask for help here : http://discuss.goko.fr/

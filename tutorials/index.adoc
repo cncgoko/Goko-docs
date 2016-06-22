@@ -2,5 +2,4 @@
 Goko <contact@goko.fr>
 1.0, 2016-06-09, Goko
 
-
- * Getting started with Goko and TinyG
+ * link:gettingstarted/tinyg-getting-started.adoc[Getting started with Goko and TinyG]
