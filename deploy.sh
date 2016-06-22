@@ -1,5 +1,6 @@
 #!/bin/bash
-for $f in "document/output/"/*
+
+for f in $(find document/output/)
 do
-  echo "$f"
+  echo $f
 done
