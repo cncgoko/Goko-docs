@@ -20,6 +20,12 @@
             </goals>
           </execution>
         </executions>
+        <configuration>
+          <sourceDirectory>./</sourceDirectory>
+          <outputDirectory>./</outputDirectory>
+          <backend>html</backend>
+          <preserveDirectories>true</preserveDirectories>
+        </configuration>
       </plugin>
     </plugins>
   </build>
