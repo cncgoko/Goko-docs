@@ -2,4 +2,10 @@
 Goko <contact@goko.fr>
 1.0, 2016-06-09, Goko
 
- * link:gettingstarted/tinyg-getting-started.adoc[Getting started with Goko and TinyG]
+== General
+
+* link:general/installation.adoc[Installing Goko]
+
+== TinyG
+
+* link:gettingstarted/tinyg-getting-started.adoc[Getting started with Goko and TinyG]
