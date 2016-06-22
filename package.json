@@ -1,8 +1,0 @@
-{
-  "name": "Goko-docs",
-  "description": "Goko documentation",
-  "version": "0.3.0",
-  "scripts": {
-    "test": "node test.js"
-  }
-}

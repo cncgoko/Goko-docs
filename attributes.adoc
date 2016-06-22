@@ -1,3 +1,0 @@
-:gokoVersion: v0.3.0
-:releaseDate: 2016-05-01
-:settingsIcon: image::serial-toolbar.png[] Settings
