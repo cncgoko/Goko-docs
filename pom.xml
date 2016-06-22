@@ -21,8 +21,8 @@
           </execution>
         </executions>
         <configuration>
-          <sourceDirectory>./</sourceDirectory>
-          <outputDirectory>./output/</outputDirectory>
+          <sourceDirectory>docs/</sourceDirectory>
+          <outputDirectory>output/</outputDirectory>
           <backend>html</backend>
           <preserveDirectories>true</preserveDirectories>
           <relativeBaseDir>true</relativeBaseDir>
