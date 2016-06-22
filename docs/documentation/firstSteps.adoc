@@ -1,0 +1,42 @@
+== First steps
+
+=== Target board selection
+
+Goko is designed to support several controller board. At the very first start, you'll be asked to select your target board.
+
+.Currently supported boards
+* TinyG V0.97
+* Grbl v0.9
+* Grbl v0.8c
+
+Once selected, Goko will start. The target board is remembered across starts. It can be changed later in the menu:Windows[Preferences > General].
+
+
+=== User Interface philosophy
+
+Goko is an aggregation of multiple *parts* _(also called *view*)_ initially displayed as tabs. Every part position can be changed in the application layout.
+
+==== Moving and docking views
+
+To change the location of a part:
+
+1. Drag the part by its title bar. Do not release the left mouse button yet,
+2. As you move around the applications, the new location of the part is displayed using a light green border,
+3. When the part is in the location you want, release the left mouse button.
+
+TIP: Groups of stacked view can be dragged using the empty space to the right of the view tabs
+
+When the application closes, it remembers the layout, to keep each element at the same place at next start.
+
+==== Minimizing and maximizing views
+
+When you need to focus on a given part, you can optimize screen use by maximizing or minimizing parts.
+
+*Maximize*
+
+A view can used as much of the display available using the maximize icon in the top right corner of its stack border. In this case, all the other parts are minimized and stored in tool bars.
+
+*Minimize*
+
+Another way to optimize the use of the screen area is to directly minimize parts or stacks that are of no current interest.
+When minimized, the stack are reduced to trim bar, showing only the icons of the contained views on the outer border of the application.
