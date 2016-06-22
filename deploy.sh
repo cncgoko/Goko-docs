@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for f in $(find document/output/)
+for f in $(find output/)
 do
   echo $f
 done
