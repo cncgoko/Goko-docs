@@ -7,7 +7,7 @@ Goko <contact@goko.fr>
 :imagesdir: images/
 
 
-include::../_attributes.adoc[]
+include::../attributes.adoc[]
 
 == Introduction
 

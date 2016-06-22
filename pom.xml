@@ -22,7 +22,7 @@
         </executions>
         <configuration>
           <sourceDirectory>./</sourceDirectory>
-          <outputDirectory>./</outputDirectory>
+          <outputDirectory>./output/</outputDirectory>
           <backend>html</backend>
           <preserveDirectories>true</preserveDirectories>
         </configuration>
