@@ -25,6 +25,7 @@
           <outputDirectory>./output/</outputDirectory>
           <backend>html</backend>
           <preserveDirectories>true</preserveDirectories>
+          <relativeBaseDir>true</relativeBaseDir>
         </configuration>
       </plugin>
     </plugins>
