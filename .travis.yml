@@ -1,23 +1,6 @@
-sudo: required
-
-services:
-  - docker
-
-before_install:
-  - mkdir -p output
-  - docker pull asciidoctor/docker-asciidoctor
+language: java
+jdk:
+- oraclejdk7
 
 script:
-  - docker run -v $TRAVIS_BUILD_DIR --name asciidoc-to-html asciidoctor/docker-asciidoctor asciidoctor -D output *.adoc
-
-after_error:
-  - docker logs asciidoc-to-html
-  - docker logs asciidoc-to-pdf
-
-after_failure:
-  - docker logs asciidoc-to-html
-  - docker logs asciidoc-to-pdf
-
-after_success:
-   - chmod a+x ./deploy.sh
-   - ./deploy.sh
+- mvn clean verify
