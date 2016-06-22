@@ -8,4 +8,4 @@ Goko <contact@goko.fr>
 
 == TinyG
 
-* link:gettingstarted/tinyg-getting-started.adoc[Getting started with Goko and TinyG]
+* link:tinyg/gettingstarted/tinyg-getting-started.adoc[Getting started with Goko and TinyG]
