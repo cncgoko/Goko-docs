@@ -26,6 +26,9 @@
           <backend>html</backend>
           <preserveDirectories>true</preserveDirectories>
           <relativeBaseDir>true</relativeBaseDir>
+          <attributes>
+            <theme>github</theme>
+          </attributes>
         </configuration>
       </plugin>
     </plugins>
