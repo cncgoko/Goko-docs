@@ -4,12 +4,13 @@ Goko <contact@goko.fr>
 :imagesdir: images/
 :icons: font
 :experimental: y
+:toc:
 
 This tutorial explains the basics of using TinyG with Goko
 
 _Last modification: {docdate}_
 
-:toc:
+
 
 == Installation
 
