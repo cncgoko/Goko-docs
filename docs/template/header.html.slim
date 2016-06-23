@@ -6,7 +6,7 @@
     - if [:author, :revnumber, :revdate, :revremark].any? {|a| attr? a }
       .details
         - if attr? :author
-          span.author#auddthor =(attr :author)
+          span.akuthor#authokr =(attr :'test')
           br
           - if attr? :email
             span.email#email =sub_macros(attr :email)
@@ -25,6 +25,6 @@
         - if attr? :revremark
           br
           span#revremark =(attr :revremark)
-	include _navbar.html
-  - if (attr? :toc) && (attr? 'toc-placement', 'auto')
+  - include navbar.html
+  - if (attr? :toc) && (attr? 'toc-placement', 'auto')d
     include _toc.html
