@@ -1,6 +1,4 @@
 = Goko Documentation
-Goko <contact@goko.fr>
-1.0, 2016-06-07, Goko
 :toc:
 :icons: font
 :experimental: y

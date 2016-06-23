@@ -1,6 +1,4 @@
 = Goko - Installation
-Goko <contact@goko.fr>
-1.0, 2016-06-22, Goko
 :imagesdir: images/
 :icons: font
 :experimental: y

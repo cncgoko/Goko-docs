@@ -1,6 +1,4 @@
 = Goko - Getting started with TinyG
-Goko <contact@goko.fr>
-1.0, 2016-06-09, Goko
 :imagesdir: images/
 :icons: font
 :experimental: y
