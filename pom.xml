@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.goko.docs</groupId>
   <artifactId>org.goko.docs</artifactId>
-  <version>0.3.1-SNAPSHOT</version>
+  <version>0.3.0</version>
 
   <build>
     <plugins>
@@ -23,10 +23,11 @@
         <configuration>
           <sourceDirectory>docs/</sourceDirectory>
           <outputDirectory>output/</outputDirectory>
+          <templateDir>docs/template/</templateDir>
           <backend>html</backend>
           <preserveDirectories>true</preserveDirectories>
           <relativeBaseDir>true</relativeBaseDir>
-          <attributes>            
+          <attributes>
             <toc>left</toc>
           </attributes>
           <asciidoc>
