@@ -10,7 +10,7 @@
       <plugin>
         <groupId>org.asciidoctor</groupId>
         <artifactId>asciidoctor-maven-plugin</artifactId>
-        <version>1.5.2</version>
+        <version>1.5.3</version>
         <executions>
           <execution>
             <id>output-html</id>
@@ -26,9 +26,12 @@
           <backend>html</backend>
           <preserveDirectories>true</preserveDirectories>
           <relativeBaseDir>true</relativeBaseDir>
-          <attributes>
-            <stylesheet>style.css</stylesheet>            
+          <attributes>            
+            <toc>left</toc>
           </attributes>
+          <asciidoc>
+            <theme>github</theme>
+          </asciidoc>
         </configuration>
       </plugin>
     </plugins>
