@@ -23,7 +23,7 @@
         <configuration>
           <sourceDirectory>docs/</sourceDirectory>
           <outputDirectory>output/</outputDirectory>
-          <templateDir>docs/template/</templateDir>
+          
           <backend>html</backend>
           <preserveDirectories>true</preserveDirectories>
           <relativeBaseDir>true</relativeBaseDir>
