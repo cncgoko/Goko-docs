@@ -14,14 +14,14 @@ _Last modification: {docdate}_
 
 == Installation
 
-== Defining TinyG as target board
+== Define TinyG as target board
 
 At first start, the application will prompt the target board selection dialog. For this tutorial, make sure TinyG v0.97 is selected and validate.
 The application will starts with the configured components for TinyG.
 
 NOTE: If you already launched Goko with a different target board, you can change it using menu:Windows[Preferences > General]
 
-== Configuring serial connection
+== Configure serial connection
 
 TinyG uses a Serial connection to communicate. We need to configure Goko so the connection can be established.
 
@@ -47,7 +47,7 @@ WARNING: the above settings are TinyG default settings. If you changed them in T
 
 Serial console displays a green dot image:activated.png[Activated] in the top right corner of its stack border when it's activated.
 
-== Connecting to TinyG
+== Connect to TinyG
 
 * Make sure the TinyG board is correctly plugged and powered.
 

@@ -4,8 +4,8 @@ Goko <contact@goko.fr>
 
 == General
 
-* link:general/installation.adoc[Installing Goko]
+* link:general/installation.html[Installing Goko]
 
 == TinyG
 
-* link:tinyg/gettingstarted/tinyg-getting-started.adoc[Getting started with Goko and TinyG]
+* link:tinyg/gettingstarted/tinyg-getting-started.html[Getting started with Goko and TinyG]
