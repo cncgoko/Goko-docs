@@ -22,12 +22,14 @@
         </executions>
         <configuration>
           <sourceDirectory>docs/</sourceDirectory>
-          <outputDirectory>output/</outputDirectory>          
+          <outputDirectory>output/</outputDirectory>
           <backend>html</backend>
+          <templateDir>docs/template/</templateDir>
           <preserveDirectories>true</preserveDirectories>
           <relativeBaseDir>true</relativeBaseDir>
           <attributes>
             <toc>left</toc>
+            <linkcss>true</linkcss>
           </attributes>
           <asciidoc>
             <theme>github</theme>
