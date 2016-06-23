@@ -27,7 +27,7 @@
           <preserveDirectories>true</preserveDirectories>
           <relativeBaseDir>true</relativeBaseDir>
           <attributes>
-            <theme>github</theme>
+            <stylesheet>docs/style.css</stylesheet>            
           </attributes>
         </configuration>
       </plugin>
