@@ -20,7 +20,7 @@ module Slim::Helpers
   MATHJAX_JS_URI       = '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML'
   PRETTIFY_BASE_URI    = '//cdnjs.cloudflare.com/ajax/libs/prettify/r298'
   BOOTSTRAP_URI        = '//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'
-  GOKO_DOC_URI         = '//docs.goko.fr/docs/style.css'
+  GOKO_DOC_URI         = '//docs.goko.fr/style.css'
   # GOKO_DOC_URI         = 'style.css'
   
   # Defaults
