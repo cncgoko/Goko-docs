@@ -6,7 +6,7 @@
     - if [:author, :revnumber, :revdate, :revremark].any? {|a| attr? a }
       .details
         - if attr? :author
-          span.author#author =(attr :author)
+          span.akuthor#authokr =(attr :'test')
           br
           - if attr? :email
             span.email#email =sub_macros(attr :email)
