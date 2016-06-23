@@ -27,7 +27,7 @@
           <preserveDirectories>true</preserveDirectories>
           <relativeBaseDir>true</relativeBaseDir>
           <attributes>
-            <stylesheet>docs/style.css</stylesheet>            
+            <stylesheet>style.css</stylesheet>            
           </attributes>
         </configuration>
       </plugin>
