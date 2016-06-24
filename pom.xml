@@ -30,11 +30,8 @@
           <attributes>
             <toc>left</toc>
             <linkcss>true</linkcss>
-            <theme>github</theme>
+            <stylesheet>http://themes.asciidoctor.org/stylesheets/github.css?v=8</stylesheet>
           </attributes>
-          <asciidoc>
-            <theme>github</theme>
-          </asciidoc>
         </configuration>
       </plugin>
     </plugins>

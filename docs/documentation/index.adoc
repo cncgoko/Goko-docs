@@ -26,6 +26,7 @@ The installation itself is as easy as extracting a zip file to the folder of you
 
 CAUTION: Make sure to match the JRE and Goko 32 or 64 bits versions
 
+== First steps
 
 include::firstSteps.adoc[]
 
