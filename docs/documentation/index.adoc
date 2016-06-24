@@ -1,4 +1,4 @@
-= Goko Documentation
+= Reference Documentation
 :toc:
 :icons: font
 :experimental: y
