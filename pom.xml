@@ -30,6 +30,7 @@
           <attributes>
             <toc>left</toc>
             <linkcss>true</linkcss>
+            <theme>github</theme>
           </attributes>
           <asciidoc>
             <theme>github</theme>
