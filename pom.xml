@@ -30,8 +30,7 @@
           <attributes>
             <toc>left</toc>
             <linkcss>true</linkcss>
-            <stylesheet>http://themes.asciidoctor.org/stylesheets/github.css?v=8</stylesheet>
-          </attributes>
+          </attributes>          
         </configuration>
       </plugin>
     </plugins>
