@@ -27,9 +27,11 @@
           <templateDir>template/</templateDir>
           <preserveDirectories>true</preserveDirectories>
           <relativeBaseDir>true</relativeBaseDir>
+          <theme>github</theme>
           <attributes>
             <toc>left</toc>
             <linkcss>true</linkcss>
+            <theme>github</theme>
           </attributes>
         </configuration>
       </plugin>
