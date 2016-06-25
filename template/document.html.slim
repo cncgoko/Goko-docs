@@ -10,12 +10,12 @@ html lang=(attr :lang, 'en' unless attr? :nolang)
     = html_meta_if 'author', (attr :authors)
     = html_meta_if 'copyright', (attr :copyright)
     = html_meta_if 'description', (attr :description)
-    = html_meta_if 'keywords', (attr :keywords)	
+    = html_meta_if 'keywords', (attr :keywords)
 	meta name='application-name' content='Goko Documentation'
 	meta name='msapplication-TileColor' content='#225DA3'
 	meta name='msapplication-TileImage' content='http://discuss.goko.fr//favicon//mstile-144x144.png'
 	meta name='theme-color' content='#225DA3'
-    title=((doctitle sanitize: true) || (attr 'untitled-label'))
+    title= "Goko - "+((doctitle sanitize: true) || (attr 'untitled-label'))
     = styles_and_scripts
     - unless (docinfo_content = docinfo).empty?
       =docinfo_content

@@ -1,5 +1,6 @@
 = Reference Documentation
 :toc:
+:numbered:
 :icons: font
 :experimental: y
 :imagesdir: images/
@@ -26,86 +27,7 @@ The installation itself is as easy as extracting a zip file to the folder of you
 
 CAUTION: Make sure to match the JRE and Goko 32 or 64 bits versions
 
-== First steps
 
-=== Target board selection
+include::firstSteps.adoc[]
 
-Goko is designed to support several controller board. At the very first start, you'll be asked to select your target board.
-
-.Currently supported boards
-* TinyG V0.97
-* Grbl v0.9
-* Grbl v0.8c
-
-Once selected, Goko will start. The target board is remembered across starts. It can be changed later in the menu:Windows[Preferences > General].
-
-
-=== User Interface philosophy
-
-Goko is an aggregation of multiple *parts* _(also called *view*)_ initially displayed as tabs. Every part position can be changed in the application layout.
-
-==== Moving and docking views
-
-To change the location of a part:
-
-1. Drag the part by its title bar. Do not release the left mouse button yet,
-2. As you move around the applications, the new location of the part is displayed using a light green border,
-3. When the part is in the location you want, release the left mouse button.
-
-TIP: Groups of stacked view can be dragged using the empty space to the right of the view tabs
-
-When the application closes, it remembers the layout, to keep each element at the same place at next start.
-
-==== Minimizing and maximizing views
-
-When you need to focus on a given part, you can optimize screen use by maximizing or minimizing parts.
-
-*Maximize*
-
-A view can used as much of the display available using the maximize icon in the top right corner of its stack border. In this case, all the other parts are minimized and stored in tool bars.
-
-*Minimize*
-
-Another way to optimize the use of the screen area is to directly minimize parts or stacks that are of no current interest.
-When minimized, the stack are reduced to trim bar, showing only the icons of the contained views on the outer border of the application.
-
-
-:settingsIcon: `image::serial-toolbar.png[] Settings`
-
-== Connecting to your board
-
-=== Serial connection
-Current version _({gokoVersion})_ supports Serial connection as it is quite commonly available at the time of writing.
-
-The connection toolbar is located in the upper main toolbar and shows the following elements :
-
-image::serial-toolbar.png[serial-toolbar, align=center]
-
-. The currently selected serial port,
-. The refresh serial port list button,
-. The connect button,
-. The disconnect button,
-. The serial setting button, which provides quick access to the serial connection settings.
-
-Before connecting, make sure to configure the connection settings as required by your board parameters.
-
-==== Serial preferences
-
-Serial connections settings can be configured in the Serial preferences page.
-
-You can access it by clicking the image:gear.png[Settings] button in the toolbar, or by using the menu menu:Windows[ Preferences > Serial]
-
-.The serial settings preferences page
-image::serial-settings.png[The serial settings preferences page, align="center"]
-
-==== Serial console
-
-The serial console displays all data flowing through in and out the active serial connection. It can also be used to send direct command to the connected serial device.
-
-.The serial console part
-image::serial-console.png[The serial console, align="center"]
-
-.Sending data
-Type the data in the upper input field and simply hit Send or press Enter key. The data will be completed with the selected end line character and then transmitted to the connected serial device.
-
-WARNING: Manually sending data using the Serial Console during the execution of a gcode file is strongly discouraged as it may interfer with the execution process !
+include::connections.adoc[]
