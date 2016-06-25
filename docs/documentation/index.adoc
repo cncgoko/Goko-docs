@@ -1,10 +1,10 @@
 = Reference Documentation
-:toc:
 :numbered:
 :icons: font
 :experimental: y
 :imagesdir: images/
 
+:toc:
 
 include::../_attributes.adoc[]
 
