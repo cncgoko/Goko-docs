@@ -24,13 +24,13 @@
           <sourceDirectory>docs/</sourceDirectory>
           <outputDirectory>output/</outputDirectory>
           <backend>html</backend>
-          <templateDir>docs/template/</templateDir>
+          <templateDir>template/</templateDir>
           <preserveDirectories>true</preserveDirectories>
           <relativeBaseDir>true</relativeBaseDir>
           <attributes>
             <toc>left</toc>
             <linkcss>true</linkcss>
-          </attributes>          
+          </attributes>
         </configuration>
       </plugin>
     </plugins>
