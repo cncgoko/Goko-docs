@@ -1,0 +1,11 @@
+== Digital Read Out
+
+The digital read out _(aka DRO)_ part allows to visualize your board state.
+
+.Digital Read Out part
+image::images\digitalreadout.png[]
+
+You can configure the displayed values it clicking the image:gear.png[Settings] button in upper right corner of the part, or by using the menu menu:Windows[ Preferences > Digital read out]
+
+.The DRO preferences
+image::images\digitalreadout-preferences.png[]

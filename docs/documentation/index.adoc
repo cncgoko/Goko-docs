@@ -31,3 +31,7 @@ CAUTION: Make sure to match the JRE and Goko 32 or 64 bits versions
 include::firstSteps.adoc[]
 
 include::connections.adoc[]
+
+include::digitalreadout.adoc[]
+
+include::shuttleexpress.adoc[]

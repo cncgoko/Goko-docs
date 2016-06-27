@@ -23,7 +23,7 @@ Serial connections settings can be configured in the Serial preferences page.
 
 You can access it by clicking the image:gear.png[Settings] button in the toolbar, or by using the menu menu:Windows[ Preferences > Serial]
 
-.The serial settings preferences page
+.The serial preferences page
 image::serial-settings.png[The serial settings preferences page, align="center"]
 
 ==== Serial console
