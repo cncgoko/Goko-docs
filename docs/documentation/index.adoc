@@ -14,7 +14,7 @@ Goko is a multi-platform CNC control software. It provides the tools to move and
 
 === Changelog
 
-link:../changelog.adoc[See changelog]
+link:../changelog.html[See changelog]
 
 == Installation
 
