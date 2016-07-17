@@ -1,10 +1,14 @@
-= Goko Tutorials
-Goko <contact@goko.fr>
-1.0, 2016-06-09, Goko
+= Tutorials
+:numbered:
+:icons: font
+:experimental: y
+
+:toc:
 
 == General
 
 * link:general/installation.html[Installing Goko]
+* link:general/execution/execution.html[Running a milling job]
 
 == TinyG
 
