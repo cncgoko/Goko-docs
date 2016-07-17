@@ -1,0 +1,389 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]--><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Asciidoctor 1.5.4"><meta name="application-name" content="Goko Documentation"><meta name="msapplication-TileColor" content="#225DA3"><meta name="msapplication-TileImage" content="http://discuss.goko.fr//favicon//mstile-144x144.png"><meta name="theme-color" content="#225DA3"><title>Goko - Reference Documentation</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://docs.goko.fr/style.css">
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"></head><body class="article"><div id="header"><h1>Reference Documentation</h1><div id="navbar"><div class="navbar navbar-default navbar-fixed-top goko-navbar" id="goko-navbar"><div class="container"><div class="navbar-header"><a class="navbar-brand" href="http://docs.goko.fr">Goko Documentation</a></div><div class="navbar-collapse collapse"><ul class="nav navbar-nav"><li class="link1"><a href="http://docs.goko.fr">Home</a></li><li class="link2"><a href="https://github.com/cncgoko/Goko">Github</a></li><li class="link3"><a href="http://discuss.goko.fr">Discuss</a></li></ul></div></div></div></div></div><div id="content"><div class="sect1">
+<h2 id="_introduction">1. Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Goko is a multi-platform CNC control software. It provides the tools to move and execute jobs on your board, as well as modifying or editing GCode files.</p>
+</div>
+<div class="sect2">
+<h3 id="_changelog">1.1. Changelog</h3>
+<div class="paragraph">
+<p><a href="../changelog.html">See changelog</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_installation">2. Installation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The binary package is available here : <a href="https://bintray.com/goko/Goko/goko/_latestVersion" class="bare">https://bintray.com/goko/Goko/goko/_latestVersion</a></p>
+</div>
+<div class="ulist">
+<div class="title">Prerequisite :</div>
+<ul>
+<li>
+<p>a Java Runtime Environment (JRE 7 or above) is required. It can be downloaded from <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" class="bare">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The installation itself is as easy as extracting a zip file to the folder of your choice.</p>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+Make sure to match the JRE and Goko 32 or 64 bits versions
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_first_steps">3. First steps</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_target_board_selection">3.1. Target board selection</h3>
+<div class="paragraph">
+<p>Goko is designed to support several controller board. At the very first start, you&#8217;ll be asked to select your target board.</p>
+</div>
+<div class="ulist">
+<div class="title">Currently supported boards</div>
+<ul>
+<li>
+<p>TinyG V0.97</p>
+</li>
+<li>
+<p>Grbl v0.9</p>
+</li>
+<li>
+<p>Grbl v0.8c</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Once selected, Goko will start. The target board is remembered across starts. It can be changed later in the <span class="menuseq"><span class="menu">Windows</span>&#160;&#9656; <span class="submenu">Preferences</span>&#160;&#9656; <span class="menuitem">General</span></span>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_user_interface_philosophy">3.2. User Interface philosophy</h3>
+<div class="paragraph">
+<p>Goko is an aggregation of multiple <strong>parts</strong> <em>(also called <strong>view</strong>)</em> initially displayed as tabs. Every part position can be changed in the application layout.</p>
+</div>
+<div class="sect3">
+<h4 id="_moving_and_docking_views">3.2.1. Moving and docking views</h4>
+<div class="paragraph">
+<p>To change the location of a part:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Drag the part by its title bar. Do not release the left mouse button yet,</p>
+</li>
+<li>
+<p>As you move around the applications, the new location of the part is displayed using a light green border,</p>
+</li>
+<li>
+<p>When the part is in the location you want, release the left mouse button.</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Groups of stacked view can be dragged using the empty space to the right of the view tabs
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>When the application closes, it remembers the layout, to keep each element at the same place at next start.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_minimizing_and_maximizing_views">3.2.2. Minimizing and maximizing views</h4>
+<div class="paragraph">
+<p>When you need to focus on a given part, you can optimize screen use by maximizing or minimizing parts.</p>
+</div>
+<div class="paragraph">
+<p><strong>Maximize</strong></p>
+</div>
+<div class="paragraph">
+<p>A view can used as much of the display available using the maximize icon in the top right corner of its stack border. In this case, all the other parts are minimized and stored in tool bars.</p>
+</div>
+<div class="paragraph">
+<p><strong>Minimize</strong></p>
+</div>
+<div class="paragraph">
+<p>Another way to optimize the use of the screen area is to directly minimize parts or stacks that are of no current interest.
+When minimized, the stack are reduced to trim bar, showing only the icons of the contained views on the outer border of the application.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_connecting_to_your_board">4. Connecting to your board</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_serial_connection">4.1. Serial connection</h3>
+<div class="paragraph">
+<p>Current version <em>(v0.3.0)</em> supports Serial connection as it is quite commonly available at the time of writing.</p>
+</div>
+<div class="paragraph">
+<p>The connection toolbar is located in the upper main toolbar and shows the following elements :</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images//serial-toolbar.png" alt="serial-toolbar">
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The currently selected serial port,</p>
+</li>
+<li>
+<p>The refresh serial port list button,</p>
+</li>
+<li>
+<p>The connect button,</p>
+</li>
+<li>
+<p>The disconnect button,</p>
+</li>
+<li>
+<p>The serial setting button, which provides quick access to the serial connection settings.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Before connecting, make sure to configure the connection settings as required by your board parameters.</p>
+</div>
+<div class="sect3">
+<h4 id="_serial_preferences">4.1.1. Serial preferences</h4>
+<div class="paragraph">
+<p>Serial connections settings can be configured in the Serial preferences page.</p>
+</div>
+<div class="paragraph">
+<p>You can access it by clicking the <span class="image"><img src="images//gear.png" alt="Settings"></span> button in the toolbar, or by using the menu <span class="menuseq"><span class="menu">Windows</span>&#160;&#9656; <span class="submenu">Preferences</span>&#160;&#9656; <span class="menuitem">Serial</span></span></p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images//serial-settings.png" alt="The serial settings preferences page">
+</div>
+<div class="title">Figure 1. The serial preferences page</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_serial_console">4.1.2. Serial console</h4>
+<div class="paragraph">
+<p>The serial console displays all data flowing through in and out the active serial connection. It can also be used to send direct command to the connected serial device.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="images//serial-console.png" alt="The serial console">
+</div>
+<div class="title">Figure 2. The serial console part</div>
+</div>
+<div class="paragraph">
+<div class="title">Sending data</div>
+<p>Type the data in the upper input field and simply hit Send or press Enter key. The data will be completed with the selected end line character and then transmitted to the connected serial device.</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+Manually sending data using the Serial Console during the execution of a gcode file is strongly discouraged as it may interfer with the execution process !
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_digital_read_out">5. Digital Read Out</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The digital read out <em>(aka DRO)</em> part allows to visualize your board state.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images//digitalreadout.png" alt="digitalreadout">
+</div>
+<div class="title">Figure 3. Digital Read Out part</div>
+</div>
+<div class="paragraph">
+<p>You can configure the displayed values it clicking the <span class="image"><img src="images//gear.png" alt="Settings"></span> button in upper right corner of the part, or by using the menu <span class="menuseq"><span class="menu">Windows</span>&#160;&#9656; <span class="submenu">Preferences</span>&#160;&#9656; <span class="menuitem">Digital read out</span></span></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images//digitalreadout-preferences.png" alt="digitalreadout preferences">
+</div>
+<div class="title">Figure 4. The DRO preferences</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_shuttle_xpress_devices">6. Shuttle Xpress devices</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Goko provides the following shortcut to support the use of Shuttle Xpress devices.</p>
+</div>
+<div class="sect2">
+<h3 id="_predefined_configuration">6.1. Predefined configuration</h3>
+<div class="paragraph">
+<p>Predefined configuration file is available in the <code>shutlleXpress</code> folder of Goko installation folder which binds the Shuttle Xpress button to Goko shortcuts</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_compatible_shortcuts">6.2. Compatible shortcuts</h3>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shortcut</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Purpose</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>A</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enable jogging on <code>X</code> axis</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>Q</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enable jogging on <code>Y</code> axis</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>W</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enable jogging on <code>Z</code> axis</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enable jogging on <code>A</code> axis</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>L</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Start homing sequence</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Set current position as <code>0</code> on the active axis</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kill alarm</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rapid jog -7</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rapid jog -6</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rapid jog -5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rapid jog -4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rapid jog -3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rapid jog -2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>H</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rapid jog -1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stop jog</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rapid jog +1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rapid jog +2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rapid jog +3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rapid jog +4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rapid jog +5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>Y</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rapid jog +6</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>U</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rapid jog +7</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Precise jog -1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>O</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Precise jog +1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_preferences">6.3. Preferences</h3>
+<div class="paragraph">
+<p>The speed and step of the jog motion can be configured in the Shuttle Xpress preferences page.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Rapid jog</strong> performs a continuous jog motion. The feedrate is interpolated between the minimum and maximum feedrate using the outer wheel index.</p>
+</li>
+<li>
+<p><strong>Precise jog</strong> performs a discrete jog motion. Each rotation step of the inner wheel will perform a motion of the given step at the given feedrate.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images//shuttleexpress-settings.png" alt="shuttleexpress settings">
+</div>
+<div class="title">Figure 5. The Shuttle Xpress preferences page</div>
+</div>
+</div>
+</div>
+</div></div><div id="footer"><div id="footer-text"><br>Last updated 2016-06-27 22:14:16 Paris, Madrid (heure dÆÚtÚ)</div></div></body></html>
