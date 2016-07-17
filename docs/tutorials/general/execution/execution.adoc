@@ -14,7 +14,7 @@ This tutorial will guide you through the use of the workspace manager and the ex
 
 [WARNING]
 ====
-This tutorial does not cover homing and machine setup which should be performed before each run
+This tutorial *does not cover homing and machine setup* which should be performed before each run
 ====
 
 == Load GCode files
@@ -40,7 +40,7 @@ image::workspace-part-token-loaded.png[]
 
 The Execution part now shows information about the execution queue.
 
-To run your job, simply click the *Start queue* button.
+To run your job, make sure Goko is connected to your machine, and click the *Start queue* button.
 
 .The execution part showing information about the current run
 image::execution-part.png[]
