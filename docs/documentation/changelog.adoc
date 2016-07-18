@@ -1,11 +1,22 @@
 
 === Changelog
 
-==== Version 0.0.3 [2016-05-01]
+
+==== Version 0.3.1 [No release date yet]
+
+.Added
+ * GCode text editor with syntax highlighting and error detection,
+ * Added keybinding for Shuttle Xpress for _Homing Sequence_, and _Reset Zero_
+
+.Fixed
+ * Fixed Translate modifier to apply translation to motion only if they are affected on one axis at least,
+ * Fixed execution monitor sometimes missing the few last commands of a file.
+ 
+==== Version 0.3.0 [2016-05-01]
 
 
 .Added
-* Support for Grbl v0.9
+* Support for Grbl v0.9,
 * New GCode parsing functionalities,
 * Added GCode modifiers support (Translate, scale, segmentize...)
 * Added auto-leveler
