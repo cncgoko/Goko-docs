@@ -1,4 +1,4 @@
-= Goko - Getting started with TinyG
+= Getting started with TinyG
 :imagesdir: images/
 :icons: font
 :experimental: y
