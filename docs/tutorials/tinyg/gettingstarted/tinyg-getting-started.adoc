@@ -12,6 +12,8 @@ _Last modification: {docdate}_
 
 == Installation
 
+See link:../../general/installation.html[Installation tutorial] 
+
 == Define TinyG as target board
 
 At first start, the application will prompt the target board selection dialog. For this tutorial, make sure TinyG v0.97 is selected and validate.
