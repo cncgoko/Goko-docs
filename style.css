@@ -40,8 +40,13 @@
 	background-position: left center;
 }
 
-.footer-test{
-	font-size:0.8em;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+.footer{
+	text-align: right;
+	padding-top: 0;
+}
+
+.footer-text{
+	font-size:0.75em;
+	font-family: "Open Sans","DejaVu Sans",sans-serif;
 	color:rgba(255,255,255,0.6);
 }
