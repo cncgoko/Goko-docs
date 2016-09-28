@@ -35,3 +35,5 @@ include::connections.adoc[]
 include::digitalreadout.adoc[]
 
 include::shuttleexpress.adoc[]
+
+include::gcode.adoc[]

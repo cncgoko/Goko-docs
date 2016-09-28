@@ -12,7 +12,7 @@ Goko is designed to support several controller board. At the very first start, y
 Once selected, Goko will start. The target board is remembered across starts. It can be changed later in the menu:Windows[Preferences > General].
 
 
-=== User Interface philosophy
+=== Understanding UI
 
 Goko is an aggregation of multiple *parts* _(also called *view*)_ initially displayed as tabs. Every part position can be changed in the application layout.
 

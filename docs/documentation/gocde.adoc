@@ -1,0 +1,71 @@
+:imagesdir: images/
+:icons: font
+:experimental: y
+
+== Working with GCode
+
+=== Importing files
+
+To import a file, use one of the following :
+
+  - Use the Open image:folder-horizontal-open.png[Open], and select _GCode file_
+  - Use the kbd:[Ctrl+G] shortcut
+
+A file dialog will open asking you to chose a file. Any file can be opened as long as it's a text file and proposed extensions are only filters.
+
+=== Workspace tree
+
+==== GCodes
+The workspace tree displays information about the loaded GCode programs and the modifiers applied to them.
+
+.The workspace part showing the loaded GCode files
+image::workspace-part.png[]
+
+When right clicking a GCode file, a contextual menu will appear allowing you to perform action on the given node.
+
+.The contextual menu for GCode files
+image::workspace-gcode-right-menu.png[]
+
+==== Execution queue
+
+The workspace tree also shows the GCodes in the execution queue and their current state.
+
+TIP: When starting the execution, all the gcode programs in the queue will be executed in the order they appear in the Execution queue branche of the tree.
+
+.The workspace part showing an execution in progress. GCode files are locked since they are being sent to the board
+image::workspace-part-execution.png[]
+
+
+=== Modifying GCode
+
+==== Modifiers
+
+Modifiers are a convenient way to apply modifications to your GCode.
+The modifiers you apply to an object are stored in a stack. By navigating up and down the stack, you can change the effect of the modifier.
+
+.Example : effects of the array modifier
+image::modifier-example.png[]
+
+.General considerations about modifiers :
+ - unlimited number of modifiers can be added to a GCode program,
+ - modifiers do not modify the original GCode file, and can be updated or deleted at any time,
+ - the order of modifiers in the stack is important. Each modifier affects those that come after it.
+
+NOTE: Some modifier have restrictions regarding the target GCode. For instance, Rotation modifier has a restricted set of option on GCode containing arcs, where arc are only defined in the XY, XZ or YZ planes.
+
+See the list of available modifiers for detailed information.
+
+==== Editor
+
+The Editor part can be used to edit the source file of GCodes. This allow to tweak the program or fix errors.
+
+.The editor part with syntax coloring
+image::editor-part.png[]
+
+Provided features include :
+
+  - Syntax coloring,
+  - Error reporting,
+  - Undo/redo,
+  - Search and replace,
+  - Automatic update of the 3D preview on save,
