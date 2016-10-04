@@ -2,7 +2,7 @@
 === Changelog
 
 
-==== Version 0.3.1 [No release date yet]
+==== Version 0.3.1 [2016-10-04]
 
 .Added
  * GCode text editor with syntax highlighting and error detection,,
@@ -10,6 +10,8 @@
  * Finer control over grid opacity,
  * Customizable background color in 3D preview,
  * Customizable camera controls (https://github.com/cncgoko/Goko/issues/29[Issue #29])
+ * More documentation http://docs.goko.fr/
+ * Added array modifier
 
 .Fixed
  * Fixed Translate modifier to apply translation to motion only if they are affected on one axis at least,

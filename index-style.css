@@ -2,6 +2,11 @@
   margin-top:52px;
 }
 
+#contribute{
+    color: rgb(113, 113,113);
+    margin-top: 40px;
+}
+
 .shadowed{
   border:0px;
   -moz-box-shadow: 1px 1px 3px 0px #999999;

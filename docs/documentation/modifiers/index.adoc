@@ -1,0 +1,9 @@
+=== Available modifiers
+:imagesdir: images/
+:icons: font
+:experimental: y
+
+
+  . link::array.adoc[Array]
+  . link::segmentize.adoc[Segmentize]
+  . link::rotate.adoc[Rotate]

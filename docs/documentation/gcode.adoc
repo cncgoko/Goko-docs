@@ -2,6 +2,7 @@
 :icons: font
 :experimental: y
 
+
 == Working with GCode
 
 === Importing files
@@ -32,7 +33,7 @@ The workspace tree also shows the GCodes in the execution queue and their curren
 
 TIP: When starting the execution, all the gcode programs in the queue will be executed in the order they appear in the Execution queue branche of the tree.
 
-.The workspace part showing an execution in progress. GCode files are locked since they are being sent to the board
+.The workspace part showing an execution in progress. GCode files are locked while they are being sent to the board
 image::workspace-part-execution.png[]
 
 
@@ -53,13 +54,13 @@ image::modifier-example.png[]
 
 NOTE: Some modifier have restrictions regarding the target GCode. For instance, Rotation modifier has a restricted set of option on GCode containing arcs, where arc are only defined in the XY, XZ or YZ planes.
 
-See the list of available modifiers for detailed information.
+See the link::modifiers/index.html[list of available modifiers] for detailed information.
 
 ==== Editor
 
 The Editor part can be used to edit the source file of GCodes. This allow to tweak the program or fix errors.
 
-.The editor part with syntax coloring
+.The editor part with syntax coloring and error marker
 image::editor-part.png[]
 
 Provided features include :
