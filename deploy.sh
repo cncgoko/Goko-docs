@@ -1,6 +1,6 @@
 #!/bin/bash
 
-lftp -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr//www/docs/ mv master master_
+lftp -u $FTP_USER:$FTP_PASS mv master master_ ftp://ftp.goko.fr//www/docs/
 
 cd output
 
