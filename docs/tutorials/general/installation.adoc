@@ -1,4 +1,4 @@
-= Goko - Installation
+= Installation
 :imagesdir: images/
 :icons: font
 :experimental: y

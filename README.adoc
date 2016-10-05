@@ -8,4 +8,4 @@ Pull request are welcome
 
 *HTML documentation is available at*
 
-http://docs.goko.fr/v0.3.0/
+http://docs.goko.fr/

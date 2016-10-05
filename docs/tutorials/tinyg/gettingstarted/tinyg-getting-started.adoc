@@ -1,4 +1,4 @@
-= Goko - Getting started with TinyG
+= Getting started with TinyG
 :imagesdir: images/
 :icons: font
 :experimental: y
@@ -11,6 +11,8 @@ _Last modification: {docdate}_
 
 
 == Installation
+
+See link:../../general/installation.html[Installation tutorial] 
 
 == Define TinyG as target board
 

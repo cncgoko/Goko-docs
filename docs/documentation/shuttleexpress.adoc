@@ -22,11 +22,11 @@ Predefined configuration file is available in the ``shutlleXpress`` folder of Go
 |kbd:[Ctrl+Alt+Shift+Z]
 | Enable jogging on ``A`` axis
 |kbd:[Ctrl+Alt+Shift+L]
-| Start homing sequence
+| Start homing sequence _(in 0.3.1)_
 |kbd:[Ctrl+Alt+Shift+K]
-| Set current position as ``0`` on the active axis
+| Set current position as ``0`` on the active axis _(in 0.3.1)_
 |kbd:[Ctrl+Alt+Shift+M]
-| Kill alarm
+| Kill alarm _(in 0.3.1)_
 |kbd:[Ctrl+Alt+Shift+X]
 | {rapidjog} -7
 |kbd:[Ctrl+Alt+Shift+C]
