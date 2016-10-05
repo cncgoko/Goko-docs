@@ -2,7 +2,7 @@
 
 
 deleteFolders(){
-	for file in $(curl -s -l -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr//www/docs/); 
+	for file in $(curl -s -l -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr//www/docs/$1); 
 	do
 	 echo "Removing file www/download/$1$file"
 	 curl -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr//www/docs/ -X "DELE $file"
@@ -13,7 +13,7 @@ deleteFolders(){
 }
 
 echo "Cleaning old docs..."
-deleteFolders master
+deleteFolders master/
 
 cd output
 
