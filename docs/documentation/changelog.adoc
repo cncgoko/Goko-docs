@@ -1,8 +1,16 @@
+= Changelog
 
-=== Changelog
+:numbered:
+:icons: font
+:experimental: y
+:imagesdir: images/
+
+:toc:
+
+include::../_attributes.adoc[]
 
 
-==== Version 0.3.1 [2016-10-04]
+== Version 0.3.1 [2016-10-04]
 
 .Added
  * GCode text editor with syntax highlighting and error detection,,
@@ -18,8 +26,7 @@
  * Fixed execution monitor sometimes missing the few last commands of a file.
  * Fixed Restore Defaults for Quantity fields in preferences. It no longer writes unit in quantity field.
 
-==== Version 0.3.0 [2016-05-01]
-
+== Version 0.3.0 [2016-05-01]
 
 .Added
 * Support for Grbl v0.9,
