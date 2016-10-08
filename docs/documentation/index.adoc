@@ -20,12 +20,29 @@ link:changelog.html[See changelog]
 
 The binary package is available here : https://bintray.com/goko/Goko/goko/_latestVersion
 
-.Prerequisite :
-* a Java Runtime Environment (JRE 7 or above) is required. It can be downloaded from http://www.oracle.com/technetwork/java/javase/downloads/index.html
+NOTE: a Java Runtime Environment (JRE 7 or above) is required. It can be downloaded from http://www.oracle.com/technetwork/java/javase/downloads/index.html
 
 The installation itself is as easy as extracting a zip file to the folder of your choice.
 
-CAUTION: Make sure to match the JRE and Goko 32 or 64 bits versions
+Make sure you download the version matching your OS and your JVM instance.
+
+WARNING: Both 32-bit and 64-bit Java Virtual Machine can be installed and used on the same computer
+
+To check your installed java version, take the following steps:
+
+ . Open a Windows Command Prompt
+ . Type `java -version`
+ . A 32 bit version will output something like :
+
+  java version "x.x.x_xxx"
+  Java(TM) SE Runtime Environment (build x.x.x_xxx)
+  Java HotSpot(TM) Client VM (build xx.xx, mixed mode, sharing)
+
+ . A 64 bit version will output _(notice the 64-bit explicitely written)_
+
+  java version "x.x.x_xxx" <br/>
+  Java(TM) SE Runtime Environment (build x.x.x_xxx) <br/>
+  Java HotSpot(TM) 64-Bit Server VM (build xx.xx, mixed mode)
 
 
 include::firstSteps.adoc[]
