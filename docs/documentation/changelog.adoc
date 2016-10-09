@@ -22,6 +22,7 @@ include::../_attributes.adoc[]
  * Added array modifier
 
 .Fixed
+ * Fixed G02 and G03 not handled due to middle 0 (https://github.com/cncgoko/Goko/issues/30[Issue #30])
  * Fixed Translate modifier to apply translation to motion only if they are affected on one axis at least,
  * Fixed execution monitor sometimes missing the few last commands of a file.
  * Fixed Restore Defaults for Quantity fields in preferences. It no longer writes unit in quantity field.
