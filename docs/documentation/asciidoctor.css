@@ -368,7 +368,7 @@ b.conum *{color:inherit!important}
 .conum:not([data-value]):empty{display:none}
 dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
 h1,h2,p,td.content,span.alt{letter-spacing:-.01em}
-h1,h2,h3,h4{padding-top:50px;margin-top:-50px}
+h1,h2,h3,h4{padding-top:52px;margin-top:-52px}
 p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
 p,blockquote,dt,td.content,span.alt{font-size:1.0625rem}
 p{margin-bottom:1.25rem}
