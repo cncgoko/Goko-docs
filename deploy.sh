@@ -13,8 +13,8 @@ deleteFolders(){
 }
 
 renameFolders(){
-	echo "Renaming folder www/download/$1 to $previousDocVersion"
-	curl -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr//www/docs/$1 -X "RNFR $1 RNTO $"
+	echo "Renaming folder www/download/$1 to $2"
+	curl -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr//www/docs/$1 -X "RNFR $1 RNTO $2"
 }
 timestamp = date +"%Y%m%d%H%M%S"
 echo "Cleaning old docs..."
