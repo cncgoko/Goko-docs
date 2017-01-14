@@ -38,7 +38,7 @@ To check your installed java version, take the following steps:
   Java(TM) SE Runtime Environment (build x.x.x_xxx)
   Java HotSpot(TM) Client VM (build xx.xx, mixed mode, sharing)
 
- . A 64 bit version will output _(notice the 64-bit explicitely written)_
+ . A 64 bit version will output the text below _(notice the 64-bit explicitely written)_
 
   java version "x.x.x_xxx" <br/>
   Java(TM) SE Runtime Environment (build x.x.x_xxx) <br/>
@@ -54,3 +54,5 @@ include::digitalreadout.adoc[]
 include::shuttleexpress.adoc[]
 
 include::gcode.adoc[]
+
+include::macro.adoc[]

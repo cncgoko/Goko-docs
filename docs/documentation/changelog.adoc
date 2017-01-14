@@ -10,6 +10,24 @@
 include::../_attributes.adoc[]
 
 
+== Version 0.3.2
+
+.Added
+ * *GCode macro support*,
+ * Added Grbl configuration watcher to maintain a stable and comptabile Grbl configuration,
+ * Added Serial Console user defined display filter to avoid flooding the console,
+ * Added preference to set the default view in 3D viewer at application startup ( in _Viewer_ page),
+ * Added Reset action in command panel for both TinyG and Grbl,
+
+.Fixed
+ * Fixed error at startup `org.eclipse.swt.SWTException: Failed to execute runnable`,
+ * Fixed Grbl not completing execution when Grbl errors happened during streaming,
+ * Fixed size of Target board selection dialog not being displayed on high DPI monitors,
+ * Fixed rendering of arc motion with rotary axis,
+ * Fixed a bug where configured DRO settings were not saved,
+ * Fixed a bug where the update confirmation was covered by the Progress dialog,
+ * Fixed TinyG controller wrong handling of Inch units
+
 == Version 0.3.1 [2016-10-04]
 
 .Added

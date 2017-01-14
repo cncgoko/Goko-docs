@@ -2,18 +2,22 @@
 
 
 deleteFolders(){
-	for file in $(curl -s -l -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr//www/docs/$1); 
+	for file in $(curl -s -l -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr//www/docs/$1);
 	do
 	 echo "Removing file www/download/$1$file"
 	 curl -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr//www/docs/$1 -X "DELE $file"
 	done
 	echo "Removing folder www/download/$1"
 	curl -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr//www/docs/$1 -X "RMD $1"
-	
+
 }
 
+renameFolders(){
+	echo "Renaming folder www/download/$1 to $previousDocVersion"
+	#curl -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr//www/docs/$1 -X "RNFR $1 RNTO $"
+}
 echo "Cleaning old docs..."
-deleteFolders master/
+renameFolders master/
 
 cd output
 

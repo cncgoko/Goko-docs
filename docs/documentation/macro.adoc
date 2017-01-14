@@ -1,0 +1,38 @@
+== Working with macros
+
+Using macros helps you to expand the capabilities of Goko to better suits your needs.
+
+The macro management panel allows to create, edit and delete macros.
+
+.Macro management panel
+image::macro-management-panel.png[The macro management panel, align="center"]
+
+=== Create a macro
+
+Macro are created by defining the following properties :
+
+Name:: the name of the macro
+
+Request confirm before execution:: used to request a confirmation before the direct execution. This can be used to prevent click errors
+
+Display in macro panel:: used to display an button in the macro execution panel, for quick and direct execution
+
+Override button color:: select and chose a color to override the button border color
+
+=== Edit GCode for a macro
+
+By clicking the *Open in GCode editor* the editor will open, allowing you to edit the actual GCode for the macro.
+
+When saving the gcode in the editor, it is automatically saved with the macro.
+
+=== Execute a macro
+
+A macro can be executed by using one of the following:
+
+. Clicking the button in the macro execution panel, if the *Display in macro panel* is activated.
+. Adding it to the execution queue, using the Execution queue contextual menu. It will be executed as any other GCode file in the execution queue
+
+.Macro execution panel
+image::macro-execution-panel.png[The macro execution panel, align="center"]
+
+NOTE: Supported GCode syntax in the macro is the same as your target board.
