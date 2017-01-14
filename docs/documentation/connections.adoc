@@ -61,6 +61,6 @@ NOTE: Serial filter only prevents the message from being displayed in the consol
 .Useful filters
 |===
 |Description                 | Pattern        | Type
-| GRBL Status filter         | <.?>           | Input
+| GRBL Status filter         | <.*>           | Input
 | GRBL Status request filter | \?             | Output
 |===
