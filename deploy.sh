@@ -17,9 +17,10 @@ renameFolders(){
 	curl -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr/www/docs/ -X "RNTO $2"
 }
 
-timestamped=`date +"%Y%m%d%H%M%S"`
-echo "Saving old docs to $previousDocVersion_timestamped/"
-renameFolders master/ "$previousDocVersion_timestamped/"
+timestamp=`date +"%Y%m%d%H%M%S"`
+destFile=$previousDocVersion"_"$timestamp
+echo "Saving old docs to $destFile/"
+renameFolders master/ "$destFile/"
 
 cd output
 
