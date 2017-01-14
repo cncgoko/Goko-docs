@@ -10,7 +10,7 @@
 include::../_attributes.adoc[]
 
 
-== Version 0.3.2
+== Version 0.3.2 [2017-01-14]
 
 .Added
  * *GCode macro support*,
