@@ -18,7 +18,7 @@ renameFolders(){
 
 timestamp=`date +"%Y%m%d%H%M%S"`
 echo "Cleaning old docs..."
-code=renameFolders master/ "$previousDocVersion_$timestamp"
+code=`renameFolders master/ "$previousDocVersion_$timestamp"`
 
 cd output
 
