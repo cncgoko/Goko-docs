@@ -20,7 +20,7 @@ renameFolders(){
 timestamp=`date +"%Y%m%d%H%M%S"`
 destFile=$previousDocVersion"_"$timestamp
 echo "Saving old docs to $destFile/"
-renameFolders master/ "$destFile/"
+renameFolders master "$destFile"
 
 cd output
 
