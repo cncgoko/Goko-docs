@@ -18,13 +18,13 @@ renameFolders(){
 }
 
 timestamp=`date +"%Y%m%d%H%M%S"`
-echo "Saving old docs..."
+echo "Saving old docs to $previousDocVersion_$timestamp/"
 renameFolders master/ "$previousDocVersion_$timestamp/"
 
 cd output
 
-for f in $(find . -type f)
-do
-  echo "$f"
-  curl --ftp-create-dirs -T $f -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr//www/docs/master/$f
-done
+#for f in $(find . -type f)
+#do
+#  echo "$f"
+#  curl --ftp-create-dirs -T $f -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr//www/docs/master/$f
+#done
