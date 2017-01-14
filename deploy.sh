@@ -13,7 +13,8 @@ deleteFolders(){
 
 renameFolders(){
 	echo "Renaming folder docs/$1 to docs/$2"
-	curl -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr/www/docs/ -X "RNFR $1 RNTO $2"
+	curl -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr/www/docs/ -X "RNFR $1"
+	curl -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr/www/docs/ -X "RNTO $2"
 	#curl -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr/www/docs/ -X "RNTO $2"
 }
 
