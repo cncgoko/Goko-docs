@@ -12,18 +12,19 @@ deleteFolders(){
 }
 
 renameFolders(){
-	echo "Renaming folder www/download/$1 to $2"
-	curl -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr/www/docs/$1 -X "RNFR $1 RNTO $2"
+	echo "Renaming folder www/docs/$1 to www/docs/$2"
+	curl -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr/www/docs/$1 -X "RNFR $1"
+	curl -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr/www/docs/$1 -X "RNTO $2"
 }
 
 timestamp=`date +"%Y%m%d%H%M%S"`
-echo "Cleaning old docs..."
+echo "Saving old docs..."
 code=`renameFolders master/ "$previousDocVersion_$timestamp"`
 
 cd output
 
-#for f in $(find . -type f)
-#do
-#  echo "$f"
-#  curl --ftp-create-dirs -T $f -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr//www/docs/master/$f
-#done
+for f in $(find . -type f)
+do
+  echo "$f"
+  curl --ftp-create-dirs -T $f -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr//www/docs/master/$f
+done
