@@ -19,6 +19,7 @@ Display in macro panel:: used to display an button in the macro execution panel,
 
 Override button color:: select and chose a color to override the button border color
 
+
 === Edit GCode for a macro
 
 By clicking the *Open in GCode editor* the editor will open, allowing you to edit the actual GCode for the macro.
