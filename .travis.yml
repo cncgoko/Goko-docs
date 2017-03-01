@@ -1,20 +1,20 @@
-language: java
-jdk:
-- oraclejdk7
+language: python
 
-branches:
+python:
+  - "2.7"
+
+ branches:
   only:
   - master
-env:
+
+ env:
   global:
   - secure: "CU/9U+DjLVaGg4L70UuN9HD/H0ZOoRlKbJ+TGssWuwnWtdhiJZ2bkACmMZRDWqZA8+rtqOWtJo1ghy8xqu5Y/QKc3dTdFqfPO+HLBifXWlc1z5uvpPe+eaZfHxdlLmsuIEXgSFxSxCoS0PET4TFyq3F9XWDu8CYdPpsmusQ9C+FRxAhAc0QmnjcRj9l0bvMznuo0Lm4FlXoWtio3rGE0os1PoIG/v5xcUSviVqw31cGRIksneOcVzgmBY78IzJbJwU1VzUcvnp0ODzORJctWa18DvRluVh8OZ0bnDVe2OIHQ0PBR706SMmDhCQfDYYBISVJ/nLMnm1h2UhkFGin25Si9RlsOM1Y/+koZdrGn/GnsoiEkXV69Ri3uCESJln1Vz3ZMOcWm4GQUmqi/RYlM0MA7Dm8cp1D8WkTSnFCbq3Qt7wtqgwYOMcSI0kKsHAQf90bA7VkWwBHeT6Q9YaBAdfighfDxxFP18MSEPmiJFJpFDdT8P/iA28GGCmn6g0broW8N9xhdAI0CbDu9xRcbJfxnx2rS+fqrl/QJUjlHv6H9OFbhKWDU2qft7LyELC9INSe9dHmp+EBTvq6uOQfq5ejSREp3RlaKCv9DD0rnCGsQppVQWxoQj104g5HC6+wpEiwRfixH0kkOaJ0rzNskZreKL5b70Y7A73gQdbRlDr0="
   - secure: "YU07WAHRZ2jTToyfPsBTwYv7Vdu1nwpAiUZfCQL7SV3sdmOoLrMPnSjF9MAQPo+e+xZkqknB7S81zbRS0ujuZYWWOLv4hV9jt26o8ELqIr1qpWjtYtE07bQL3dcVxUxePvZfVPsEU14W2YrdGmVc3osMa9vqOzw0VpZM5UELlvGV1Qc8/lHJ5IUY9y9YCLyYRyXrqDkZRCV2KB+InF8hSDBCMAlQncUlz9DXFUsHqW+RA+UJ3uvtnMO68OPuF/P8qhepqhjDNil4TtHLl8r2Cqfo9NvvyY3vI4lDQLVmKG1CW7p6NseSrn8F4Nf8u8tk3usKLVKEJIpO3agCyIV5AWn8Zhqkht+f686QyJNrspstbStFKEtwrlqrQdw4zCP6hoGO3Ff0a3nY9cYTZye4X6wOxOfhud2P6fUaIbw7cBFHmbFT1fVoAQEfSlV1F1ADYY52H2LSbPYdltx5uBDYY8sLLfHiT3AOoKsb04KU3PLNw5OyCMs3APXMrurPvZY85bNTTKXo81F/Ca6rLWzC2GRZymqP+u7W/HN2gnP5OgrA3kdLjsQ7Z8kG7io7WC5t0nRcWV8dRwaEEykT/Tjl1Y0nU+Z9ac9bYx5ItfBUb2SbL81xNn1w6GX/uG5wfSe3mXMW7nMeZAwKLOjtg4Gkk2JvE0mcP6igxjSd82pzXGM="
-  - previousDocVersion: 0.3.2
-  - docVersion: 0.3.3
-
-script:
-- mvn clean verify
-
-after_success:
- - chmod a+x ./deploy.sh
- - ./deploy.sh
+ 
+# command to install dependencies
+install: "pip install Sphinx"
+# command to run tests
+script: sphinx-build -n -b html _build/doctrees . _build/html
+# Flags used here, not in `make html`:
+#  -n   Run in nit-picky mode. Currently, this generates warnings for all missing references.
