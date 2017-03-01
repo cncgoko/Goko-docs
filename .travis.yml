@@ -25,3 +25,7 @@ script:
   - sphinx-build -n -b html source build
 # Flags used here, not in `make html`:
 #  -n   Run in nit-picky mode. Currently, this generates warnings for all missing references.
+
+after_success:
+  - chmod a+x ./deploy.sh
+  - ./deploy.sh

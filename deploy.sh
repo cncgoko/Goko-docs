@@ -1,16 +1,5 @@
 #!/bin/bash
 
-
-deleteFolders(){
-	for file in $(curl -s -l -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr//www/docs/$1);
-	do
-	 echo "Removing file download/$1$file"
-	 curl -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr/www/docs/$1 -X "DELE $file"
-	done
-	echo "Removing folder download/$1"
-	curl -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr/www/docs/$1 -X "RMD $1"
-}
-
 renameFolders(){
 	echo "Renaming folder docs/$1 to docs/$2"	
 	#curl -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr/www/docs/ -Q "-RNFR $1" -Q "-RNTO $2"
@@ -19,9 +8,9 @@ renameFolders(){
 timestamp=`date +"%Y%m%d%H%M%S"`
 destFile=$previousDocVersion"_"$timestamp
 echo "Saving old docs to $destFile/"
-renameFolders master "$destFile"
+renameFolders masterTest "$destFile"
 
-cd output
+cd build
 
 if curl -u $FTP_USER:$FTP_PASS --output /dev/null --silent --head --fail "ftp://ftp.goko.fr/www/docs/master/"; then
 	# master folder already exists. It should not at this point
@@ -31,6 +20,6 @@ else
 	for f in $(find . -type f)
 	do
 	  echo "$f"
-	  curl --ftp-create-dirs -T $f -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr/www/docs/master/$f
+	  curl --ftp-create-dirs -T $f -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr/www/docs/masterTest/$f
 	done
 fi
