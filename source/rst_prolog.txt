@@ -1,0 +1,9 @@
+.. role:: guibutton
+
+.. |cog-button| image:: /images/gear.png
+
+.. role:: json(code)
+    :language: json
+	
+.. role:: rest(code)
+    :language: rest
