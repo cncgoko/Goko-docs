@@ -12,7 +12,7 @@ renameFolders masterTest "$destFile"
 
 cd build
 
-if curl -u $FTP_USER:$FTP_PASS --output /dev/null --silent --head --fail "ftp://ftp.goko.fr/www/docs/master/"; then
+if curl -u $FTP_USER:$FTP_PASS --output /dev/null --silent --head --fail "ftp://ftp.goko.fr/www/docs/masterTest/"; then
 	# master folder already exists. It should not at this point
 	echo "Failed : master folder still exists. Previous documentation was not archived ?"
 else
