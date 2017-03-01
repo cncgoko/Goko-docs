@@ -27,5 +27,5 @@ script:
 #  -n   Run in nit-picky mode. Currently, this generates warnings for all missing references.
 
 #after_success:
-  #- chmod a+x ./deploy.sh
-  #- ./deploy.sh
+#  - chmod a+x ./deploy.sh
+#  - ./deploy.sh
