@@ -17,6 +17,8 @@ env:
 # command to install dependencies
 install: 
   - pip install Sphinx
+  - pip install sphinx_rtd_theme
+  - pip install sphinxcontrib-inlinesyntaxhighlight
 
 # command to run tests
 script: 
