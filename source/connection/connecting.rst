@@ -10,7 +10,7 @@ Serial connection toolbar
 
 A quick access connection toolbar is located in the upper main toolbar and shows the following elements.
 
-.. image:: images\serial-toolbar.png
+.. image:: images/serial-toolbar.png
 	:align: center
 
 #. The currently selected serial port,
