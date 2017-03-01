@@ -1,7 +1,7 @@
 language: python
 
 python:
-  - "2.7"
+  - 2.7
 
 branches:
   only:
@@ -13,9 +13,11 @@ env:
   - secure: "YU07WAHRZ2jTToyfPsBTwYv7Vdu1nwpAiUZfCQL7SV3sdmOoLrMPnSjF9MAQPo+e+xZkqknB7S81zbRS0ujuZYWWOLv4hV9jt26o8ELqIr1qpWjtYtE07bQL3dcVxUxePvZfVPsEU14W2YrdGmVc3osMa9vqOzw0VpZM5UELlvGV1Qc8/lHJ5IUY9y9YCLyYRyXrqDkZRCV2KB+InF8hSDBCMAlQncUlz9DXFUsHqW+RA+UJ3uvtnMO68OPuF/P8qhepqhjDNil4TtHLl8r2Cqfo9NvvyY3vI4lDQLVmKG1CW7p6NseSrn8F4Nf8u8tk3usKLVKEJIpO3agCyIV5AWn8Zhqkht+f686QyJNrspstbStFKEtwrlqrQdw4zCP6hoGO3Ff0a3nY9cYTZye4X6wOxOfhud2P6fUaIbw7cBFHmbFT1fVoAQEfSlV1F1ADYY52H2LSbPYdltx5uBDYY8sLLfHiT3AOoKsb04KU3PLNw5OyCMs3APXMrurPvZY85bNTTKXo81F/Ca6rLWzC2GRZymqP+u7W/HN2gnP5OgrA3kdLjsQ7Z8kG7io7WC5t0nRcWV8dRwaEEykT/Tjl1Y0nU+Z9ac9bYx5ItfBUb2SbL81xNn1w6GX/uG5wfSe3mXMW7nMeZAwKLOjtg4Gkk2JvE0mcP6igxjSd82pzXGM="
  
 # command to install dependencies
-install: "pip install Sphinx"
+install: 
+  - pip install Sphinx
 
 # command to run tests
-script: sphinx-build -n -b html _build/doctrees . _build/html
+script: 
+  - sphinx-build -n -b html _build/doctrees . _build/html
 # Flags used here, not in `make html`:
 #  -n   Run in nit-picky mode. Currently, this generates warnings for all missing references.
