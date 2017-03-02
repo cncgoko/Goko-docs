@@ -3,7 +3,7 @@ Macro
 
 The macro panel allows to define GCode programs that can be easily reused.
 
-.. image:: images\macro-management-panel.png
+.. image:: images/macro-management-panel.png
 	:align: center
 
 	
@@ -50,6 +50,8 @@ Edit a macro
  
 In the **Macros Manager** panel, select the macro to edit in the list and click the :guibutton:`Edit` button above the list. Fields of the macro will be available for modification. 
 
+Once you're done with modifications, simply click the :guibutton:`Apply` button. To cancel them, click the :guibutton:`Cancel` button.
+
 ==== 
 
 Delete a macro
@@ -68,7 +70,7 @@ A macro can be executed by using one of the following:
 
  * Click the button in the macro execution panel, if the *Display in macro panel* is activated.
 
-.. image:: images\macro-execution-panel.png
+.. image:: images/macro-execution-panel.png
  :align: center
 
 .. warning:: Using this method, the execution of the macro will start **IMMEDIATELY** unless the option :guibutton:`Request confirm before execution` is checked on the given macro.
@@ -77,6 +79,6 @@ A macro can be executed by using one of the following:
  
  * Add it to the execution queue, using the Execution queue contextual menu. It will be executed just like any other GCode file in the execution queue
 
-.. image:: images\macro-add-queue-menu.png
+.. image:: images/macro-add-queue-menu.png
  :align: center
 
