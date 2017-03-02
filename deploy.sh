@@ -6,13 +6,13 @@ renameFolders(){
 }
 
 timestamp=`date +"%Y%m%d%H%M%S"`
-destFile="masterTest_"$timestamp
+destFile="master_"$timestamp
 echo "Saving old docs to $destFile/"
-renameFolders "masterTest" "$destFile"
+renameFolders "master" "$destFile"
 
 cd build
 
-if curl -u $FTP_USER:$FTP_PASS --output /dev/null --silent --head --fail "ftp://ftp.goko.fr/www/docs/masterTest/"; then
+if curl -u $FTP_USER:$FTP_PASS --output /dev/null --silent --head --fail "ftp://ftp.goko.fr/www/docs/master/"; then
 	# master folder already exists. It should not at this point
 	echo "Failed : master folder still exists. Previous documentation was not archived ?"
 else
@@ -20,6 +20,6 @@ else
 	for f in $(find . -type f)
 	do
 	  echo "$f"
-	  curl --ftp-create-dirs -T $f -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr/www/docs/masterTest/$f
+	  curl --ftp-create-dirs -T $f -u $FTP_USER:$FTP_PASS ftp://ftp.goko.fr/www/docs/master/$f
 	done
 fi
