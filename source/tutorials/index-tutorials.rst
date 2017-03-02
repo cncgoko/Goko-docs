@@ -1,4 +1,4 @@
-.. Goko documentation master file
+.. Goko tutorial master file
 
 Welcome to Goko's tutorial!
 ================================

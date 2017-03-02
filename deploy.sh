@@ -6,9 +6,9 @@ renameFolders(){
 }
 
 timestamp=`date +"%Y%m%d%H%M%S"`
-destFile=$previousDocVersion"_"$timestamp
+destFile="masterTest_"$timestamp
 echo "Saving old docs to $destFile/"
-renameFolders masterTest "$destFile"
+renameFolders "masterTest" "$destFile"
 
 cd build
 

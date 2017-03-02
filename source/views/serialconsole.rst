@@ -5,7 +5,7 @@ Serial console
 
 The serial console displays all data flowing through *(in and out)* the active serial connection. It can also be used to send direct command to the connected serial device.
 
-.. image:: images\serial-console.png
+.. image:: images/serial-console.png
 	:align: center
 
 
@@ -22,7 +22,7 @@ Serial console output can be filtered to hide some boring communication between 
 
 The serial filters configuration
 
-.. image:: images\serial-filters.png
+.. image:: images/serial-filters.png
 	:align: center
 
 Serial filters are defined using the following fields :

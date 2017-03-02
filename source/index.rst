@@ -16,4 +16,5 @@ Welcome to Goko's documentation!
 	gcode/gcodesupport
 	misc/xpress
 
-
+	:caption: USER DOCUMENTATION
+	tutorials/index-tutorials
