@@ -59,7 +59,7 @@ The speed and step of the jog motion can be configured in the Shuttle Xpress pre
 * |precisejog| performs a discrete jog motion. Each rotation step of the inner wheel will perform a motion of the given step at the given feedrate.
 
 
-.. figure:: images\shuttleexpress-settings.png
+.. figure:: images/shuttleexpress-settings.png
  :align: center
  
  The Shuttle Xpress preferences page

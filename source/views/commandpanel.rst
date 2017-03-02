@@ -4,7 +4,7 @@ Command panel
 
 The command panel view gives you direct control over your board.
 
-.. image:: images\commandpanel-part.png
+.. image:: images/commandpanel-part.png
 	:align: center
 	
 It provides most of the basics features for CNC control.

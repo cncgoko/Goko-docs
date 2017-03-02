@@ -3,7 +3,7 @@ Workspace
 
 The workspace tree displays various information about the loaded GCode programs and the modifiers applied to them.
 
-.. image:: images\workspace-part.png
+.. image:: images/workspace-part.png
 	:align: center
 
 GCode node
@@ -15,7 +15,7 @@ When you right click on GCode files, Goko displays a context menu containing act
 
 The contextual menu for GCode files
 
-.. image:: images\workspace-gcode-right-menu.png
+.. image:: images/workspace-gcode-right-menu.png
 	:align: center
 
 See also:
@@ -29,7 +29,7 @@ The Execution queue node display the GCode scheduled for execution and their cur
 
 When the execution starts, the programs will be executed in the order they appear in the Execution queue branche of the tree.
 
-.. image:: images\workspace-part-execution.png
+.. image:: images/workspace-part-execution.png
 	:align: center
 	
 Add a GCode file for execution

@@ -58,7 +58,7 @@ Modifiers are a convenient way to apply modifications to your GCode.
 The modifiers you apply to an object are stored in a stack. By navigating up and down the stack, you can change the effect of the modifier.
 
 
-.. figure:: images\modifier-example.png
+.. figure:: images/modifier-example.png
 
  Example : effects of the array modifier
 

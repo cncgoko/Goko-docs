@@ -29,7 +29,7 @@ Serial connection parameters
 
 Serial connections settings can be accessed using the *Window* > *Preferences* > *Serial* or by clicking the cog icons in the `Serial connection toolbar`_ .
 
-.. image:: images\serial-settings.png
+.. image:: images/serial-settings.png
 	:align: center
 	
 Refer to your board setting and documentation to configure this settings. See default boards serial settings for connection hints.

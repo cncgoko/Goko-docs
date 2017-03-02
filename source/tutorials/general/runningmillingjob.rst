@@ -1,4 +1,4 @@
-.. |open-gcode-button| image:: images\folder-horizontal-open.png
+.. |open-gcode-button| image:: images/folder-horizontal-open.png
 
 Running a milling job
 =====================
@@ -20,7 +20,7 @@ Load GCode files
 
 * After validation the file is displayed in the Workspace part and the GCode is rendered in the 3D visualisation part.
 
-.. figure::images\workspace-part-file-loaded.png
+.. figure::images/workspace-part-file-loaded.png
  :align: center
  
  The workspace part showing the loaded file
@@ -31,7 +31,7 @@ Prepare execution queue
 * Add the newly imported file in the Execution queue by doing a right click on the file in the workspace tree, and click *Add to execution queue*
 
 
-.. figure:: images\workspace-part-token-loaded.png
+.. figure:: images/workspace-part-token-loaded.png
  :align: center
 
  The GCode file in the execution queue
@@ -43,7 +43,7 @@ The Execution part now shows information about the execution queue.
 
 To run your job, make sure Goko is connected to your machine, and click the :guibutton:`Start queue` button.
 
-.. figure:: images\execution-part.png
+.. figure:: images/execution-part.png
  :align: center
 
  The execution part showing information about the current run

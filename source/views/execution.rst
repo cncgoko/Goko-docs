@@ -5,7 +5,7 @@ The execution view provides feedbacks about the current execution queue and basi
 
 A GCode program in the execution queue is called a token. It can be a file, a macro, a generated code from a modifier, etc...
 
-.. image:: images\execution-part.png
+.. image:: images/execution-part.png
 	:align: center
 
 :Tokens: the number of completed token and the total number of token to execute
@@ -16,10 +16,10 @@ A GCode program in the execution queue is called a token. It can be a file, a ma
 
 During execution, the progress bar will turn green.
 
-.. image:: images\execution-part-running.png
+.. image:: images/execution-part-running.png
 	:align: center
 
 When paused, the progress bar will turn yellow.
 	
-.. image:: images\execution-part-paused.png
+.. image:: images/execution-part-paused.png
 	:align: center
