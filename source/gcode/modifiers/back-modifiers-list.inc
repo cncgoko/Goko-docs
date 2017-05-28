@@ -1,1 +1,0 @@
-Back to :ref:`modifiers-list`

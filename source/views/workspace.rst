@@ -9,7 +9,7 @@ The workspace tree displays various information about the loaded GCode programs 
 GCode node
 ----------
 
-The GCode node shows all the loaded GCode files as well as the modifiers applied to them. 
+The GCode node shows all the loaded GCode files as well as the modifiers applied to them.
 
 When you right click on GCode files, Goko displays a context menu containing actions for the selected file.
 
@@ -19,19 +19,19 @@ The contextual menu for GCode files
 	:align: center
 
 See also:
-	* :ref:`gcode_modifiers`		
+	* :ref:`GCode modifiers <gcode_modifiers>`		
 	* :ref:`Serial console view <view_serial_console>`
-	
+
 Execution queue node
 --------------------
 
-The Execution queue node display the GCode scheduled for execution and their current state. 
+The Execution queue node display the GCode scheduled for execution and their current state.
 
 When the execution starts, the programs will be executed in the order they appear in the Execution queue branche of the tree.
 
 .. image:: images/workspace-part-execution.png
 	:align: center
-	
+
 Add a GCode file for execution
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

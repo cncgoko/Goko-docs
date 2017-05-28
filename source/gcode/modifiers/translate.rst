@@ -1,7 +1,8 @@
-.. _modifier-translate:
-
 Translate
 #########
+
+Description
+===========
 
 Move the target gcode using the input parameters.
 
@@ -19,6 +20,3 @@ Parameters
 :B: the translation along the B axis
 
 :C: the translation along the C axis
-
-
-.. include:: back-modifiers-list.inc

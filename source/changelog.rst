@@ -2,6 +2,25 @@
 Change Log
 ==========
 
+Version 0.3.4
+-------------
+
+Release date: Not released
+
+**Added**
+ * Grbl 1.1 support,
+ * Configurable keybindings,
+ * Improved execution time estimation. It now takes into account the machines maximum speeds,
+ * Fixed Precise Jog behaviour,
+
+**Fixed**
+ * Fixed an issue where serial connection was impossible after a unexpected disconnection,
+ * Fixed :issue:`39`,
+ * Fixed case issue during parsing of GCode,
+ * Fixed default view keybinding so they don't conflict with GCode editor,
+ * Fixed G2 target board sometimes not showing,
+ * Fixed error when changing Grbl status polling while being disconnected from Grbl
+
 Version 0.3.3
 -------------
 
@@ -15,7 +34,7 @@ Release date: 2017-02-26
 **Fixed**
  * Fixed wrong handling of coordinate system (both Grbl and TinyG) - :issue:`36`
  * Fixed an issue where execution was not displayed in 3d view - :issue:`35`
- 
+
 Version 0.3.2
 -------------
 
@@ -36,7 +55,7 @@ Release date: 2017-01-14
  * Fixed a bug where configured DRO settings were not saved,
  * Fixed a bug where the update confirmation was covered by the Progress dialog,
  * Fixed TinyG controller wrong handling of Inch units
- 
+
 Version 0.3.1
 -------------
 
@@ -76,4 +95,4 @@ Release date: 2016-05-01
 
 **Fixed**
  * Fixed Grbl buffering issue,
- * Fixed High CPU while connected to serial - `Issue #22 <https://github.com/cncgoko/Goko/issues/22>`_ 
+ * Fixed High CPU while connected to serial - `Issue #22 <https://github.com/cncgoko/Goko/issues/22>`_

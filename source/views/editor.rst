@@ -1,15 +1,38 @@
+.. |tb-save| image:: images/toolbar/editor/disk-black.png
+.. |tb-save-all| image:: images/toolbar/editor/disks-black.png
+.. |tb-find| image:: images/toolbar/editor/clipboard-search-result.png
+.. |tb-undo| image:: images/toolbar/editor/arrow-curve-180.png
+.. |tb-redo| image:: images/toolbar/editor/arrow-curve.png
+.. |tb-settings| image:: images/toolbar/gear.png
+
 Editor
 ======
-
 
 The editor provides useful features for GCode edition.
  * Syntax highlighting,
  * Error notification,
  * Undo and redo,
  * Find and replace,
-  
+
 .. image:: images/editor-part.png
 	:align: center
+
+Toolbar
+#######
+
+    +--------------+-----------------------------------------------------------------------------------+
+    | |tb-save|    +  Save the active document                                                         +
+    +--------------+-----------------------------------------------------------------------------------+
+    | |tb-save-all|+  Save all documents                                                               +
+    +--------------+-----------------------------------------------------------------------------------+
+    | |tb-find|    +  Open Find/replace dialog on the current document                                 +
+    +--------------+-----------------------------------------------------------------------------------+
+    | |tb-undo|    +  Undo last modification                                                           +
+    +--------------+-----------------------------------------------------------------------------------+
+    | |tb-redo|    +  Redo last undone modification                                                    +
+    +--------------+-----------------------------------------------------------------------------------+
+    | |tb-settings|+  Open editor settings panel                                                       +
+    +--------------+-----------------------------------------------------------------------------------+
 
 ====
 
@@ -34,36 +57,36 @@ View final GCode
 When applying modifiers to a GCode, the resulting program will obviously differ from the source file. To visualise the result of theses modifiers, right click the target file in the Workspace tree, and select :guibutton:`View final`
 The computed content will be rendered in the editor in **read only mode**. You won't be able to change the code to avoid conflicts with the applied modifiers.
 
-.. figure:: images/editor-part-readonly-tab.png   
+.. figure:: images/editor-part-readonly-tab.png
  :align: center
- 
+
  A read only tab editor
 
-.. figure:: images/editor-part-standard-tab.png   
+.. figure:: images/editor-part-standard-tab.png
  :align: center
- 
+
  A standard *(write acess)* tab editor
- 
+
 ====
- 
+
 Error visualisation
 ###################
 
 The editor will highligth words that doesn't match the supported GCode words (see :ref:`gcodesupport`).
 
-.. figure:: images/editor-part-error.png   
+.. figure:: images/editor-part-error.png
  :align: center
- 
+
 .. note:: Click on the marker in the right ruler to quickly jump to the line containing the error
 
 GCode containing error will be decorated with a red cross in the Workspace tree.
 
-.. figure:: images/editor-workspace-tree-error.png   
+.. figure:: images/editor-workspace-tree-error.png
  :align: center
 
- 
+
 ====
- 
+
 Editor settings
 ###############
 

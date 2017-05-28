@@ -1,7 +1,7 @@
 .. Goko documentation master file
 
 Goko's documentation
-=====================
+====================
 
 .. toctree::
 	:maxdepth: 2
@@ -9,7 +9,8 @@ Goko's documentation
 
 	intro
 	changelog
-	gettingstarted/installation	
+	gettingstarted/installation
+	preferences/preferences
 	gettingstarted/gettingstarted
 	connection/connecting
 	views/views
@@ -18,6 +19,6 @@ Goko's documentation
 
 .. toctree::
 	:maxdepth: 2
-	:caption: TUTORIALS	
-	
+	:caption: TUTORIALS
+
 	tutorials/tutorials

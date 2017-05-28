@@ -1,7 +1,8 @@
-.. _modifier-rotate:
-
 Rotate
 ######
+
+Description
+===========
 
 Rotates the target gcode using the input parameters.
 
@@ -14,5 +15,3 @@ Parameters
 
 
 .. note:: This modifier can only be applied to a gcode program without arc motion, or a progam where all arcs are defined in the same reference plane. In this case the only allowed rotation axis is the normal of the reference plane.
-
-.. include:: back-modifiers-list.inc

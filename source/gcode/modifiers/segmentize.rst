@@ -1,5 +1,3 @@
-.. _modifier-segmentize:
-
 Segmentize
 ##########
 
@@ -12,5 +10,3 @@ Parameters
 ==========
 
 :Chordal tolerance: the highest acceptable error between the arc and the computed linear motions.
-
-.. include:: back-modifiers-list.inc

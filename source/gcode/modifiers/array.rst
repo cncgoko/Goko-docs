@@ -1,5 +1,3 @@
-.. _modifier-array:
-
 Array
 #####
 
@@ -16,6 +14,3 @@ Parameters
 :Number of copies: the number of copy that should be created, not including the original gcode.
 
 :Offset: the offset applied between each copy.
-
-
-.. include:: back-modifiers-list.inc

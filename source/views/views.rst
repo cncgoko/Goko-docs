@@ -3,11 +3,12 @@ Views
 
 .. toctree::
 	:maxdepth: 2
-	
+
+	3dviewer
 	digitalreadout
-	commandpanel	
+	commandpanel
 	workspace
-	execution	
+	execution
 	editor
 	serialconsole
 	macro
