@@ -5,7 +5,7 @@ Change Log
 Version 0.3.4
 -------------
 
-Release date: Not released
+Release date: 2017-05-17
 
 **Added**
  * Grbl 1.1 support,
