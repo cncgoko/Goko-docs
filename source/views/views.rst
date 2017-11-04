@@ -13,3 +13,4 @@ Views
 	serialconsole
 	macro
 	centerfinder
+	zeroprobe
